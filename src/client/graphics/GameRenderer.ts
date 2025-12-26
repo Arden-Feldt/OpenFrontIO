@@ -315,6 +315,10 @@ export class GameRenderer {
     window.addEventListener("resize", () => this.resizeCanvas());
     this.resizeCanvas();
 
+    setTimeout(() => {
+      this.canvas.focus();
+    }, 0);
+
     //show whole map on startup
     this.transformHandler.centerAll(0.9);
 
