@@ -54,7 +54,7 @@ export function createCanvas(): HTMLCanvasElement {
   canvas.style.touchAction = "none";
 
   canvas.tabIndex = 0;
-  canvas.style.outline = "none"; // Remove default focus outline
+  canvas.style.outline = "none";
 
   canvas.addEventListener("pointerdown", () => {
     canvas.focus();
